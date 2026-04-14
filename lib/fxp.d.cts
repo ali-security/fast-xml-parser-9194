@@ -468,11 +468,7 @@ type ValidationError = {
 
 declare class XMLParser {
   constructor(options?: X2jOptions);
-<<<<<<< HEAD
-  parse(xmlData: string | Buffer ,validationOptions?: validationOptions | boolean): any;
-=======
   parse(xmlData: string | Uint8Array, validationOptions?: validationOptions | boolean): any;
->>>>>>> 910dae5 (fix entities performance & security issues)
   /**
    * Add Entity which is not by default supported by this library
    * @param entityIdentifier {string} Eg: 'ent' for &ent;
